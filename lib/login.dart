@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class MyLogin {
-  const MyLogin({Key? key}) : super(key: key);
+  const MyLogin({Set? key}) : super(key: key) {
+    // TODO: implement MyLogin
+    throw UnimplementedError();
+  }
 
   @override
   // ignore: override_on_non_overriding_member
@@ -9,8 +12,8 @@ class MyLogin {
 }
 
 class _MyLoginState extends State<MyLogin> {
-  @override
   Future<dynamic> build(BuildContext context) async {
+    var FontWeight;
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
@@ -64,15 +67,14 @@ class _MyLoginState extends State<MyLogin> {
                                 )),
                           ),
                           SizedBox(
-                            height: 40,
-                          ),
+                            height: 40,),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
                                 'Sign in',
                                 style: TextStyle(
-                                    fontSize: 27, fontWeight: FontWeight.w700),
+                                    fontSize: 27, fontWeight:FontWeight.w700),
                               ),
                               CircleAvatar(
                                 radius: 30,
@@ -112,7 +114,7 @@ class _MyLoginState extends State<MyLogin> {
                                     'Forgot Password',
                                     style: TextStyle(
                                       decoration: TextDecoration.underline,
-                                      color: Color(0xff4c505b),
+                                      color: classColor(0xff4c505b),
                                       fontSize: 18,
                                     ),
                                   )),
@@ -130,4 +132,16 @@ class _MyLoginState extends State<MyLogin> {
       ),
     );
   }
+}
+
+mixin MediaQuery {
+}
+
+class AssetImage {
+}
+
+BoxDecoration({required image}) {
+}
+
+class Container {
 }
