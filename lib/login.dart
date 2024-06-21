@@ -43,9 +43,9 @@ class _MyLoginState extends State<MyLogin> {
                       child: Column(
                         children: [
                           TextField(
-                            style: TextStyle(color: Colors.black),
+                            style: TextStyle(color:Colors.black),
                             decoration: InputDecoration(
-                                fillColor: Colors.grey.shade100,
+                                fillColor: Colors:red.context 
                                 filled: true,
                                 hintText: "Email",
                                 border: OutlineInputBorder(
@@ -59,7 +59,7 @@ class _MyLoginState extends State<MyLogin> {
                             style: TextStyle(),
                             obscureText: true,
                             decoration: InputDecoration(
-                                fillColor: Colors.grey.shade100,
+                                fillColor: Colors.orange.shade100,
                                 filled: true,
                                 hintText: "Password",
                                 border: OutlineInputBorder(
