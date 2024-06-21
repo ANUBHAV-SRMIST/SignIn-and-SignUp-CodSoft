@@ -1,4 +1,4 @@
-import: 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 class MyLogin {
   const MyLogin({Key? key}) : super(key: key);
@@ -11,10 +11,9 @@ class MyLogin {
 class _MyLoginState extends State<MyLogin> {
   @override
   Future<dynamic> build(BuildContext context) async {
-    var decorationImage = DecorationImage;
     return Container(
       decoration: BoxDecoration(
-        image: decorationImage(
+        image: DecorationImage(
             image: AssetImage('assets/login.png'), fit: BoxFit.cover),
       ),
       child: Scaffold(
